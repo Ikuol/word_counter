@@ -6,11 +6,16 @@
 }
 
 .input-container{
-    background-color: #fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-color: rgb(16, 102, 151);
     padding: 3rem;
     border-radius: 4px;
-    width: 50%;
+    width: 500px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .input-container h2{
@@ -30,23 +35,8 @@
 .form-input{
     padding: 13px 15px;
     border-radius: 8px;
-    border: 2px solid #1a73e8;
     outline: 0;
     width: 100%;
-}
-
-.form-input-label{
-    position: absolute;
-    top: -7px;
-    left: 10px;
-    color: #1a73e8;
-    font-size: 0.85rem;
-    padding-right: 0.33rem;
-    padding-left: 0.33rem;
-    background: #fff;
-    transition: all 0.15s cubic-bezier(0.4,0,0.2,1);
-    font-family: sans-serif;
-    text-transform: capitalize;
 }
 
 .form-btn{
@@ -72,5 +62,14 @@ textarea{
     min-height: 6em;
     max-height: 50vh;
     width: 100%;
+}
+
+@media only screen and  (max-width : 600px) {
+
+    .input-container{
+        width: 100%;
+        background-color: #fff;
+    }
+
 }
 

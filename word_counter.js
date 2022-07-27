@@ -1,10 +1,10 @@
-let countTarget = document.querySelector('#word-count-input');
-let wordCount = document.querySelector('#word-count');
-    let characterCount = document.querySelector('#character-count');
+var countTarget = document.querySelector('#word-count-input');
+var wordCount = document.querySelector('#word-count');
+    var characterCount = document.querySelector('#character-count');
     var count = function(){
-        let characters = countTarget.value;
-            let characterLength = characters.length;
-        let words = characters.split(/[nrs]+/g).filter(function(word){
+        var characters = countTarget.value;
+            var characterLength = characters.length;
+        var words = characters.split(' ').filter(function(word){
             return word.length > 0;
         });
             wordCount.innerHTML = words.length;
